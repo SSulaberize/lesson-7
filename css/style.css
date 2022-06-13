@@ -1,0 +1,64 @@
+.background{
+    background-image: url('../images/background.jpg');
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.cog-1{
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    animation: cog-rotation 2s infinite 3s;
+}
+.cog-1-size{
+    height: 150px;
+    width: 150px;
+}
+.cog-2{
+    position: absolute;
+    top: 95px;
+    left: 309px;
+    animation: cog-anti-rotation 2s infinite 3s;
+}
+.cog-2-size{
+    height: 100px;
+    width: 100px;
+}
+.balloon-1{
+    animation: balloon-1-movement 5s infinite 2s alternate;
+}
+.balloon-1-size{
+    height: 200px;
+    weight: 100px;
+
+}
+.balloon-2{
+    position:absolute;
+    animation: balloon-2-movement 5s infinite alternate;
+
+}
+.balloon-2-size{
+    height: 200px;
+    width: 100px;
+}
+/* keyframes */
+@keyframes cog-rotation{
+    from{transform: rotate(0deg)}
+    to{transform:rotate(360deg)}
+}
+@keyframes cog-anti-rotation{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(-360deg)}
+}
+@keyframes balloon-1-movement{
+    0%   {transform: translatex(0px) translatey(0px)}
+    25%  {transform: translatex(300px) translatey(300px)}
+    50%  {transform: translatex(700px) translatey(300px)}
+    75%  {transform: translatex(900px) translatey(200px)}
+    100% {transform: translatex(1300px) translatey(200px)}
+}
+@keyframes balloon-2-movement{
+    0% {top: 200px left: 0px}
+    25%{top:400px left: 500px}
+}
