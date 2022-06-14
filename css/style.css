@@ -1,7 +1,8 @@
 .background{
     background-image: url('../images/background.jpg');
     height: 900px;
-     background-size: cover;
+    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
@@ -45,19 +46,19 @@
 }
 /* keyframes */
 @keyframes cog-rotation{
-    from{transform: rotate(0deg)}
-    to{transform:rotate(360deg)}
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
 }
 @keyframes cog-anti-rotation{
-    from{transform: rotate(0deg)}
-    to{transform: rotate(-360deg)}
+    from{transform: rotate(0deg);}
+    to{transform: rotate(-360deg);}
 }
 @keyframes balloon-1-movement{
-    0%   {transform: translatex(0px) translatey(0px)}
-    25%  {transform: translatex(300px) translatey(300px)}
-    50%  {transform: translatex(700px) translatey(300px)}
-    75%  {transform: translatex(900px) translatey(200px)}
-    100% {transform: translatex(1300px) translatey(200px)}
+    0%   {transform: translatex(0px) translatey(0px);}
+    25%  {transform: translatex(300px) translatey(300px);}
+    50%  {transform: translatex(700px) translatey(300px);}
+    75%  {transform: translatex(900px) translatey(200px);}
+    100% {transform: translatex(1300px) translatey(200px);}
 }
 @keyframes balloon-2-movement{
    0% {left: 0px; top: 200px}
